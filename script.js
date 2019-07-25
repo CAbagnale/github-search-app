@@ -1,5 +1,3 @@
-URL = 'https://api.github.com/users/:username/repos';
-
 function getRepos(user) {
     const searchURL = `https://api.github.com/users/${user}/repos`
     console.log(searchURL);
@@ -10,10 +8,9 @@ function getRepos(user) {
       }
       throw new Error(response.message);
     })
-    // .then(response => response.json())
     .then(responseJson => displayResults(responseJson))
     .catch(err => {
-      $('#js-error-message').html(`<p>Something went wrong: ${err.message}</p><p>The user <strong>${user}</strong> does not exist, or has no repos.</p>`);
+      $('#js-error-message').html(`<p>ERROR: ${err.message}</p><p>The user <strong>${user}</strong> does not exist, or has no repos.</p>`);
       $('#js-error-message').removeClass('hidden');
     });
 }
