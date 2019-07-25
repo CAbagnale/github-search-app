@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>GitHub repo finder</h1>
+            <h2>(by user)</h2>
+        </header>
+        <section class="search">
+            <form id="js-form">
+                <label for="search-user">Search user</label>
+                <input type="text" name="search-user" id="js-search-user" placeholder="GitHubUser" required>
+        
+                <input type="submit" value="search">
+            </form>
+            <div id="js-error-message"></div>
+        </section>
+        <section class="results hidden">
+            <h2 id="js-user-display">Repos:</h2>
+            <ul id="js-results-display">
+
+            </ul>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

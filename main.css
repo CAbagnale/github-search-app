@@ -1,0 +1,29 @@
+.hidden {
+    display: none;
+}
+
+.container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    margin-top: 40px;
+}
+
+h1, h2 {
+    margin: 0 0 0;
+}
+
+.search {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
